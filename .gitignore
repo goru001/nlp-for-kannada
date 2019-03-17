@@ -1,0 +1,11 @@
+classification/.ipynb_checkpoints/*
+classification/models/*
+classification/tmp/*
+classification/Kannada_Classification_Data_News_Headlines.csv
+datasets-preparation/.ipynb_checkpoints/*
+datasets-preparation/all_kannada_wikipedia_links.pkl
+language-model/.ipynb_checkpoints/*
+language-model/KannadaDataset/*
+language-model/KannadaWikipediaArticles/*
+tokenizer/kannada_lm.model
+tokenizer/kannada_lm.vocab
