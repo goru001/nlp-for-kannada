@@ -1,29 +1,44 @@
 # NLP for Kannada
 
-This repository contains State of the Art Tokenizer, Language model
+This repository contains State of the Art Language models
  and Classifier for Kannada, which is spoken predominantly by
   Kannada people in India, mainly in the state of Karnataka.
 
+The models trained here have been used in [Natural Language Toolkit for Indic Languages
+ (iNLTK)](https://github.com/goru001/inltk)
+
 ## Dataset
 
-* Download [Kannada Wikipedia Articles Dataset](https://drive.google.com/open?id=1KBAch8djPwVLwN4O-CCCQoaV_FcS4AwU) (32,997 articles) which I scraped, cleaned and
-used to train the language model
+#### Created as part of this project
+1. [Kannada Wikipedia Articles](https://www.kaggle.com/disisbig/kannada-wikipedia-articles)
 
-* Download [Kannada News classification Dataset](https://drive.google.com/open?id=1Qgnn03Wrju6Nv8cs1-PQlzk26X4rpfsg) which I scraped and used to train 
-the classifier
+2. [Kannada News Dataset](https://www.kaggle.com/disisbig/kannada-news-dataset)
 
 ## Results
 
-#### Language Model
+#### Language Model Perplexity
 
-`on 20% validation set`
+| Architecture/Dataset | Kannada Wikipedia Articles |
+|:--------:|:----:|
+|   ULMFiT  |  70.10  |
+|  TransformerXL |  61.97  |
 
-* Perplexity of language model: ~70
+#### Classification Metrics
 
-#### Classifier
+##### ULMFiT
 
-* Accuracy of classification model: ~94%
-* Kappa score of classification model: ~90
+| Dataset | Accuracy | Kappa Score |
+|:--------:|:----:|:----:|
+| Kannada News Dataset |  95.9  |  93.04  |
+
+#### Visualizations
+ 
+##### Embedding Space
+
+| Architecture | Visualization |
+|:--------:|:----:|
+| ULMFiT | [Embeddings projection](https://projector.tensorflow.org/?config=https://raw.githubusercontent.com/goru001/nlp-for-kannada/master/language-model/embedding_projector_config.json) |
+| TransformerXL | [Embeddings projection](https://projector.tensorflow.org/?config=https://raw.githubusercontent.com/goru001/nlp-for-kannada/master/language-model/embedding_projector_transformer_config.json)  |
 
 ## Pretrained Language Model
 

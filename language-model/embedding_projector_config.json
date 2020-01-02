@@ -1,7 +1,7 @@
 {
   "embeddings": [
     {
-      "tensorName": "Kannada Embedding Vectors",
+      "tensorName": "Kannada Embedding Vectors - ULMFiT",
       "tensorShape": [
         25000,
         400
