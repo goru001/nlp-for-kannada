@@ -14,43 +14,41 @@ The models trained here have been used in [Natural Language Toolkit for Indic La
 
 2. [Kannada News Dataset](https://www.kaggle.com/disisbig/kannada-news-dataset)
 
+#### Open Source Datasets
+1. [IndicNLP News Article Classification Dataset - Kannada](https://github.com/ai4bharat-indicnlp/indicnlp_corpus#indicnlp-news-article-classification-dataset)
+
 ## Results
 
-#### Language Model Perplexity
+### Language Model Perplexity (on validation set)
 
 | Architecture/Dataset | Kannada Wikipedia Articles |
 |:--------:|:----:|
 |   ULMFiT  |  70.10  |
 |  TransformerXL |  61.97  |
 
-#### Classification Metrics
+### Classification Metrics
 
 ##### ULMFiT
 
-| Dataset | Accuracy | Kappa Score |
-|:--------:|:----:|:----:|
-| Kannada News Dataset |  95.9  |  93.04  |
+| Dataset | Accuracy | MCC | Notebook to Reproduce results |
+|:--------:|:----:|:----:|:----:|
+| IndicNLP News Article Classification Dataset - Kannada |  98.87  |  98.30  | [Link](https://github.com/goru001/nlp-for-kannada/blob/master/classification/Kannada_Classification_Model.ipynb) |
 
-#### Visualizations
+### Visualizations
  
-##### Embedding Space
+##### Word Embeddings
 
 | Architecture | Visualization |
 |:--------:|:----:|
 | ULMFiT | [Embeddings projection](https://projector.tensorflow.org/?config=https://raw.githubusercontent.com/goru001/nlp-for-kannada/master/language-model/embedding_projector_config.json) |
 | TransformerXL | [Embeddings projection](https://projector.tensorflow.org/?config=https://raw.githubusercontent.com/goru001/nlp-for-kannada/master/language-model/embedding_projector_transformer_config.json)  |
 
-## Pretrained Language Model
+## Pretrained Models
 
+#### Language Models 
 Download pretrained Language Model from [here](https://drive.google.com/open?id=1s8d83UKyw_C6h-wbGUqYSXtHxuFUcVlS)
 
-
-## Classifier
-
-Download classifier from [here](https://drive.google.com/open?id=1mPFvR-QP1eenfYSWYJnck7LtB4IS_PM5)
-
-
-## Tokenizer
+#### Tokenizer
 
 Trained tokenizer using Google's [sentencepiece](https://github.com/google/sentencepiece)
 
